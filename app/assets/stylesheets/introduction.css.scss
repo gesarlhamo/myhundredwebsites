@@ -12,15 +12,15 @@ text-align: center;
 
 div
 {
-	position:relative;
-	right:-600px;
+	position:absolute;
+	right:100px;
 	font-size:20px;
 }
 
 img
 {
-position:absolute;
-left:20px;	
+float:left;
+margin:20px;	
 }
 
 div strong
@@ -28,12 +28,14 @@ div strong
 	color:#4682b4;
 }
 
-h2
+div h2 p
 {
-position:relative;
-top:100px;
-padding:30px;
+	position:absolute;
+	right:400px;
+	color:red;
 }
+
+
 
 // Place all the styles related to the introduction controller here.
 // They will automatically be included in application.css.
