@@ -1,6 +1,9 @@
 Aboutme::Application.routes.draw do
+  get "aboutme" => 'introduction#index', as: 'aboutme'
+  get "countdown/index"
+
   resources :posts
-  root to: "introduction#index"
+  root to: "introduction#index" 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
