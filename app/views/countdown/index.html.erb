@@ -8,9 +8,9 @@
 
 	<body>
 	
-
+       <div id="countdownFrame">
 		<p> My 100 Days Timer </p>
-		<span id="countdown"><span>
+		<span id="countdown"></span>
     <script>
 	var target_date = new Date("Dec 13, 2013").getTime();
 	var days, hours, minutes, seconds;
@@ -30,12 +30,14 @@
     minutes = parseInt(seconds_left /60);
     seconds = parseInt(seconds_left % 60);
 
-    countdown.innerHTML = days + "d, " + hours +"h, " + minutes + "m, " + seconds + "s";
+    countdown.innerHTML = days + "d: " + hours +"h: " + minutes + "m: " + seconds + "s: ";
 
 	}, 1000);
 
 	</script>
 
+
+    </div>
 
 	</body>
 </html>
