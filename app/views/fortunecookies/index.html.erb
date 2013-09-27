@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css href="stylesheet/fortunecookies.css">
+	<script src="assets/jquery.min.js"></script>
+	</head>
+	
+
+
+
+	<body>
+<h1> Lets Open Your Fortune </h1>
+<div id="bluefc">
+<img src="assets/blue-fortune-cookies-giant.jpg" height="200" width="200">
+</div>
+<div id="fancyfc">
+<img src="assets/Fancy-Fortune-Cookies.jpg" height="300" width="300">
+</div>
+<div id="greenfc">
+<img src="assets/green-fortune-cookie.jpg" height="400" width="400">
+</div>
+<script> 
+$(document).ready(function() {
+	$("#bluefc").click(function(){
+	$(this).fadeOut(5000);
+	$(this).text('you are luky');
+
+});
+});
+
+$(document).ready(function() {
+	$("#fancyfc").click(function(){
+	$(this).fadeOut(5000);
+	$(this).text('you are pretty luck');
+
+});
+});
+
+$(document).ready(function() {
+	$("#greenfc").click(function(){
+	$(this).fadeOut(5000);
+	$(this).text('you are very lucky')
+});
+});
+
+</script>
+	</script>
+	</body>
+</html>

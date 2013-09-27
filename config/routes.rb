@@ -1,6 +1,7 @@
 Aboutme::Application.routes.draw do
   get "aboutme" => 'introduction#index', as: 'aboutme'
-  get "countdown" => 'countdown#index', as:'countdown' 
+  get "countdown" => 'countdown#index', as:'countdown'
+  get "fortunecookies" => 'fortunecookies#index', as:'fortunecookies' 
 
   resources :posts
   root to: "introduction#index" 
