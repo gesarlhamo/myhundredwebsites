@@ -2,9 +2,11 @@ Aboutme::Application.routes.draw do
   get "aboutme" => 'introduction#index', as: 'aboutme'
   get "countdown" => 'countdown#index', as:'countdown'
   get "fortunecookies" => 'fortunecookies#index', as:'fortunecookies' 
+  get "jews" => 'jews#index', as:'jews'
 
   resources :posts
   root to: "introduction#index" 
+  root to: "jews#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
