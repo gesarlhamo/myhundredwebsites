@@ -91,7 +91,7 @@ input {
 		<header class="now">
 			<h1>Chicago</h1>
 
-			<h2><span>74</span>&deg</h2>
+			<h2><span><%= $temp %></span>&deg</h2>
 		</header>
 
 		<div class="loading">Loading<img src="http://www.ajaxload.info/cache/00/99/CC/FF/FF/FF/24-0.gif">
@@ -104,25 +104,45 @@ input {
 		$input = $form.find("input"),
 		$city = $(".now h1"),
 		$temp = $(".now h2 span");
+		
 
-	$form.submit(function () {
+		var myfunction = function(city){
 
-		var city = $.trim($input.val()), 
-		    data = {
+			
+		    var data = {
 		    	q: city,
 		    	units: "imperial"
+
 		    };
 
 		    if (city) {
 		    	$.getJSON("http://api.openweathermap.org/data/2.5/weather?callback=?", data, function (response, status){
 
 		    		$city.text(response.name);
-		    		$temp.text(response.main.temp);
+		    		
+		    		$temp.text(Math.round(response.main.temp));
 		    	});
+
+
 		    }
 		    return false;
 
-	})
+		}
+
+
+    
+	$form.submit(function () {
+		var city = $.trim($input.val());
+		return myfunction(city);
+	});
+
+	
+
+	$(document).ready(function(){ 
+
+		return myfunction("chicago");
+     
+	});
 
       
 	</script>
