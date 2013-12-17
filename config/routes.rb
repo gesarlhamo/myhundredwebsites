@@ -3,10 +3,12 @@ Aboutme::Application.routes.draw do
   get "countdown" => 'countdown#index', as:'countdown'
   get "fortunecookies" => 'fortunecookies#index', as:'fortunecookies' 
   get "jews" => 'jews#index', as:'jews'
+  get "weatherapp" => 'weatherApp#index', as:'weatherapp'
 
   resources :posts
   root to: "introduction#index" 
   root to: "jews#index"
+  root to: "weatherapp#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
