@@ -2,12 +2,12 @@ Aboutme::Application.routes.draw do
   get "aboutme" => 'introduction#index', as: 'aboutme'
   get "countdown" => 'countdown#index', as:'countdown'
   get "fortunecookies" => 'fortunecookies#index', as:'fortunecookies' 
-  get "jews" => 'jews#index', as:'jews'
+  get "jewllery" => 'jewllery#index', as:'jewllery'
   get "weatherapp" => 'weatherApp#index', as:'weatherapp'
 
   resources :posts
   root to: "introduction#index" 
-  root to: "jews#index"
+  root to: "jewllery#index"
   root to: "weatherapp#index"
 
   # The priority is based upon order of creation:
