@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
 
-	<%= stylesheet_link_tag "countdown", :media => "all" %>
+body
+{
+text-align:center;
+font-size:50px;
+border-style:solid;
+border-color:blue;
+margin: 200px 50px 0px 50px;
+padding: 20px 10px 80px 10px;
+
+}
+
+
+
+</style>
+	
 	</head>
 
 
 	<body>
 	
        <div id="countdownFrame">
-		<p> My 100 Days Timer </p>
+		<p> My Timer </p>
 		<span id="countdown"></span>
     <script>
 	var target_date = new Date("April 1, 2014").getTime();
