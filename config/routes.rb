@@ -4,11 +4,12 @@ Aboutme::Application.routes.draw do
   get "fortunecookies" => 'fortunecookies#index', as:'fortunecookies' 
   get "jewllery" => 'jewllery#index', as:'jewllery'
   get "weatherapp" => 'weatherApp#index', as:'weatherapp'
+  get "colors" => 'colors#index', as:'colors'
 
   resources :posts
   root to: "introduction#index" 
-  root to: "jewllery#index"
-  root to: "weatherapp#index"
+  #root to: "jewllery#index"
+  #root to: "weatherapp#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
