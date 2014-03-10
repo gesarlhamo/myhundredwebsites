@@ -5,6 +5,7 @@ Aboutme::Application.routes.draw do
   get "jewllery" => 'jewllery#index', as:'jewllery'
   get "weatherapp" => 'weatherApp#index', as:'weatherapp'
   get "colors" => 'colors#index', as:'colors'
+  get "shapes" => 'shapes#index', as:'shapes'
 
   resources :posts
   root to: "introduction#index" 

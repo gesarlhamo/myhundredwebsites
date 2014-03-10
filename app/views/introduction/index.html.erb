@@ -2,41 +2,92 @@
 <html>
 
 <head>
+
+  <title> Gesang's Websites </title>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+  <%= stylesheet_link_tag "reset", :media => "all" %>
+  
+  <link href='http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'/>
+
 	<%= stylesheet_link_tag "introduction", :media => "all" %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
 
     <style>
        div 
        {
          float:left;
+         margin:50;
+         clear:both;
+         
+
+       }
+
+       img{
+        width:50%;
+        height:50%;
+
+       }
+
+       #intro{
+        margin:20px;
+
+
+       }
+
+       #main{
+        margin:20px;
+       }
+
+       body{
+        font-size:20px;
        }
 
     </style>
 </head>
 <body>
-	<div>
-<h1> My Website Projects!! </h1>
-<img src="https://sphotos-a-iad.xx.fbcdn.net/hphotos-frc3/292550_4055422510118_139875104_n.jpg" alt="My college graduation picture" height="500" width="600">
-
-<img src="http://coachlarisa.com/wp-content/uploads/2012/12/Albert-Einstein-quotes-About-Life.jpg" height="500" width="500">
+ 
+  <h1> My Websites! </h1>
+    <div id="mypic">
+      <figure>
+  <img src="https://sphotos-a-iad.xx.fbcdn.net/hphotos-frc3/292550_4055422510118_139875104_n.jpg" alt="My college graduation picture"> 
+  </figure>
     </div>
 
-<div>
-<h2> Brief introcution of myself </h2>
-<p>	Name:Gesang Lamu </p> 
-<p> Education:Bachelor's degree from Duke University </p>
-<p> <a href ="https://www.facebook.com/gesang.lamu"> My Facebook Page </a> </p>
-<p> <a href ="https://twitter.com/rooftop00"> My twitter </a> </p>  
-<br>
-<h2> My Favorites </h2>
-<p> My favorite color: aqua & blue </p>
-<p> My favorite food : spicy food </p>
-<p> My favorite thing to do : seeping afternoon tea in nice weather with my favorite people</p>
-<p> My favorite sports: running by the lake </p>
 
-</div>
+<div id="intro">
+  <h2> Brief introcution of myself </h2>
+    <p> Name:Gesang Lamu </p> 
+    <p> Education:Bachelor's degree from Duke University </p>
+  </div>
 
-<div>
-<h2> List of my websites </h2>
+<div id="main">
+
+
+<!-- AddThis Follow BEGIN -->
+<p>Follow Me</p>
+  <div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
+<a class="addthis_button_facebook_follow" addthis:userid="gesang.lamu"></a>
+<a class="addthis_button_twitter_follow" addthis:userid="rooftop00"></a>
+
+<p><a href="https://github.com/gesarlhamo"> My Github </a></p>
+
+  </div>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5202c7c57ed81350"></script>
+<!-- AddThis Follow END -->
+
+
+
+
+  <div>
+
+    <br>
+<h2> My websites </h2>
 <p> <a href = "http://gesarlhamo-bitstarter-mooc.herokuapp.com/"> This website is made for a course from coursera taught by Stanford </a> </p>
 
 <p> <a href ="http://powerful-refuge-8880.herokuapp.com"> About myself </a> </p>
@@ -52,6 +103,7 @@
 
 
 
+  </div>
 </div>
 
 
