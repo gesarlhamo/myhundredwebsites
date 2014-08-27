@@ -7,7 +7,12 @@
    	height:300px;
    	display:none;
    }
-   #clickMe1{
+
+   p:hover{
+    color:purple;
+   }
+
+   #clickMe1, #clickMe2, #clickMe3{
    	background-color:#daa520;
    	padding:20px;
    	text-align:center;
@@ -17,45 +22,47 @@
 
 
    }
-   #pictureframe1{
-   	background:#daa520;
-   	padding:20px;
-   	text-aligh:center;
-   	width:300px;
-   	display:none;
-   	border:2px solid #000;
-   }
- #clickMe2{
+  
+ /*#clickMe2{
    	background-color:#daa520;
    	padding:20px;
    	text-align:center;
    	width:300px;
    	display:block;
    	border:2px solid #000;
-
-
-   }
-   #pictureframe2{
-   	background:#daa520;
-   	padding:20px;
-   	text-aligh:center;
-   	width:300px;
-   	display:none;
-   	border:2px solid #000;
    }
 
-
-
+ 
    #clickMe3{
-   	background-color:#daa520;
-   	padding:20px;
-   	text-align:center;
-   	width:300px;
-   	display:block;
-   	border:2px solid #000;
+    background-color:#daa520;
+    padding:20px;
+    text-align:center;
+    width:300px;
+    display:block;
+    border:2px solid #000;
+  }*/
 
-
+    #pictureframe1, #pictureframe2, #pictureframe3{
+    background:#daa520;
+    padding:20px;
+    text-aligh:center;
+    width:300px;
+    display:none;
+    border:2px solid #000;
    }
+
+
+   /*#pictureframe2{
+   	background:#daa520;
+   	padding:20px;
+   	text-aligh:center;
+   	width:300px;
+   	display:none;
+   	border:2px solid #000;
+   }
+
+
+
    #pictureframe3{
    	background:#daa520;
    	padding:20px;
@@ -63,7 +70,7 @@
    	width:300px;
    	display:none;
    	border:2px solid #000;
-   }
+   }*/
 
 
 
@@ -80,7 +87,7 @@
 		<ul>
     		<div id="clickMe1"> 
     			<h2>Necklaces</h2>
-    			<p> Click to see Jewllery <p>
+    			<p>Click to see Jewellery<p>
             </div>
 
     		<div id="pictureframe1">
@@ -92,8 +99,8 @@
     		
     	<ul>
     		<div id="clickMe2"> 
-    			<h2>Earring</h2>
-    			<p> Click to see Jewllery <p>
+    			<h2>Earrings</h2>
+    			<p>Click to see Jewellery<p>
             </div>
 
     		<div id="pictureframe2">
@@ -106,8 +113,8 @@
 
         <ul>
     		<div id="clickMe3"> 
-    			<h2>Bracelate</h2>
-    			<p> Click to see Jewllery <p>
+    			<h2>Braceletes</h2>
+    			<p>Click to see Jewellery<p>
             </div>
 
     		<div id="pictureframe3">
@@ -122,29 +129,40 @@
 
 
 <script>
+// $(document).ready(function(){
+// 	$("#clickMe1,#clickMe2,#clickMe3").click(function(){
+// 		$(this).click(function(){$("img").fadeIn(1000);
+//       $("#pictureframe1,#pictureframe2,#pictureframe3").slideToggle("slow");
+//       });
+    
+//     });
+
+// });
+
+
 $(document).ready(function(){
-	$("#clickMe1").on("click",function(){
-		$("img").fadeIn(1000);
-		$("#pictureframe1").slideToggle("slow");
-	});
+  $("#clickMe1").on("click",function(){
+    $("img").fadeIn(1000);
+    $("#pictureframe1").slideToggle("slow");
+  });
 
 });
 
 
 $(document).ready(function(){
-	$("#clickMe2").on("click",function(){
-		$("img").fadeIn(1000);
-		$("#pictureframe2").slideToggle("slow");
-	});
+  $("#clickMe2").on("click",function(){
+    $("img").fadeIn(1000);
+    $("#pictureframe2").slideToggle("slow");
+  });
 
 });
 
 
 $(document).ready(function(){
-	$("#clickMe3").on("click",function(){
-		$("img").fadeIn(1000);
-		$("#pictureframe3").slideToggle("slow");
-	});
+  $("#clickMe3").on("click",function(){
+    $("img").fadeIn(1000);
+    $("#pictureframe3").slideToggle("slow");
+  });
 
 });
 
